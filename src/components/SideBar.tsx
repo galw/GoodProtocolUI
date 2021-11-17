@@ -158,7 +158,7 @@ export default function SideBar({ mobile }: { mobile?: boolean }) {
             <nav>
                 <NavLink to={'/dashboard'}>{i18n._(t`Dashboard`)}</NavLink>
                 <NavLink to={'/swap'}>{i18n._(t`Swap`)}</NavLink>
-                <NavLink to={'/stakes'}>{i18n._(t`Stakes`)}</NavLink>
+                <NavLink to={'/stakes'}>{i18n._(t`Stake`)}</NavLink>
                 <NavLink to={'/portfolio'}>{i18n._(t`Portfolio`)}</NavLink>
                 <ExternalLink label="Wallet" url="https://wallet.gooddollar.org/" />
                 <ExternalLink label="Fuse Bridge" url="https://app.fuse.fi/#/bridge" />
@@ -200,7 +200,7 @@ export default function SideBar({ mobile }: { mobile?: boolean }) {
                                 </>
                             )}
                             <br />
-                            GDAO {gdaoBalance?.toSignificant(6, { groupSeparator: ',' }) ?? '-'}
+                            GOOD {gdaoBalance?.toSignificant(6, { groupSeparator: ',' }) ?? '-'}
                         </div>
                     </div>
                 </div>

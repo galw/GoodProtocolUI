@@ -83,13 +83,7 @@ function WithdrawRewards({ trigger, onClaim, ...rest }: WithdrawRewardsProps) {
                             </Title>
                             {
                                 <p className="warning mb-5">
-                                    {error ? (
-                                        error.message
-                                    ) : (
-                                        <>
-                                            Warning message goes here... <br /> Warning message goes here...
-                                        </>
-                                    )}
+                                    {error ? error.message : `Claiming your rewards will reset your multiplier.`}
                                 </p>
                             }
                             <div className="flex flex-col items-center gap-1 relative">

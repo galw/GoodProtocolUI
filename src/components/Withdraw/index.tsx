@@ -104,7 +104,9 @@ function Withdraw({ token, protocol, totalStake, open, setOpen, onWithdraw, stak
                             <div>{`${formatNumber(totalStake)} ${token}`}</div>
                         </div>
 
-                        <div className="horizontal mt-4 mb-2" />
+                        <div className="horizontal mt-4 mb-2">
+                            <p className="warning">Claiming your rewards will reset your multiplier.</p>
+                        </div>
 
                         <PercentInputControls
                             value={percentage}

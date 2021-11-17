@@ -47,7 +47,7 @@ export default function Stakes(): JSX.Element | null {
                             <ListHeaderWithSort sort={sorted} sortKey="tokens.A.symbol">
                                 <div className="flex items-center">
                                     {i18n._(t`Token`)}{' '}
-                                    <QuestionHelper text="This is the token that is currently being staked." />
+                                    <QuestionHelper text="This is the token that is currently available to stake to the Fund." />
                                 </div>
                             </ListHeaderWithSort>
                         </th>
@@ -55,7 +55,7 @@ export default function Stakes(): JSX.Element | null {
                             <ListHeaderWithSort sort={sorted} sortKey="protocol">
                                 <div className="flex items-center">
                                     {i18n._(t`Protocol`)}
-                                    <QuestionHelper text="This is the protocol that the token is staked to." />
+                                    <QuestionHelper text="This is the protocol that the token will be staked to." />
                                 </div>
                             </ListHeaderWithSort>
                         </th>
@@ -63,7 +63,7 @@ export default function Stakes(): JSX.Element | null {
                             <ListHeaderWithSort sort={sorted} sortKey="APY" direction="descending">
                                 <div className="flex items-center">
                                     {i18n._(t`APY`)}
-                                    <QuestionHelper text="This is the current Annual Percentage Yield being earned." />
+                                    <QuestionHelper text="Annual Percentage Yield (APY) is the percentage yield being earned." />
                                 </div>
                             </ListHeaderWithSort>
                         </th>
@@ -71,7 +71,7 @@ export default function Stakes(): JSX.Element | null {
                             <ListHeaderWithSort sort={sorted} sortKey="socialAPY" direction="descending">
                                 <div className="flex items-center">
                                     {i18n._(t`Social APY`)}
-                                    <QuestionHelper text="This is the annual percentage of UBI you’ll generate" />
+                                    <QuestionHelper text="This is the annual percentage of UBI your stake will create." />
                                 </div>
                             </ListHeaderWithSort>
                         </th>
@@ -79,7 +79,7 @@ export default function Stakes(): JSX.Element | null {
                             <ListHeaderWithSort sort={sorted} sortKey="liquidity" direction="descending">
                                 <div className="flex items-center">
                                     {i18n._(t`Liquidity`)}
-                                    <QuestionHelper text="This is the Total Value Staked in the staking contract (USD)." />
+                                    <QuestionHelper text="This is the total value staked in the GoodDollar Trust staking contract (USD)." />
                                 </div>
                             </ListHeaderWithSort>
                         </th>
@@ -87,7 +87,7 @@ export default function Stakes(): JSX.Element | null {
                             <ListHeaderWithSort sort={sorted} sortKey="rewards.G$" direction="descending">
                                 <div className="flex items-center">
                                     {i18n._(t`Total Rewards`)}
-                                    <QuestionHelper text="This is the Total Yearly Rewards in G$ and GDAO. " />
+                                    <QuestionHelper text="These are the total yearly rewards in G$ and GOOD." />
                                 </div>
                             </ListHeaderWithSort>
                         </th>
