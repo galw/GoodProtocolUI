@@ -151,38 +151,42 @@ const Portfolio = () => {
                 <Table
                     header={
                         <tr>
-                            <th>
-                                <Title type={'category'}>TYPE</Title>
-                            </th>
-                            <th>
-                                <Title type={'category'} className="flex items-center">
-                                    {i18n._(t`TOKEN`)}{' '}
-                                    <QuestionHelper
-                                        text={i18n._(t`This is the token that is currently being staked.`)}
-                                    />
-                                </Title>
-                            </th>
-                            <th>
-                                <Title type={'category'} className="flex items-center">
-                                    {i18n._(t`PROTOCOL`)}{' '}
-                                    <QuestionHelper
-                                        text={i18n._(t`This is the protocol that the token is staked to.`)}
-                                    />
-                                </Title>
-                            </th>
-                            <th>
-                                <Title type={'category'}>{i18n._(t`STAKE`)}</Title>
-                            </th>
-                            <th>
-                                <Title type={'category'}>G$ {i18n._(t`REWARDS`)}</Title>
-                            </th>
-                            <th>
-                                <Title type={'category'}>{i18n._(t`MULTIPLIER`)}</Title>
-                            </th>
-                            <th>
-                                <Title type={'category'}>GDAO {i18n._(t`REWARDS`)}</Title>
-                            </th>
-                            <th></th>
+                            {[
+                                {
+                                    title: i18n._(t`TYPE`),
+                                    questionText: i18n._(t`TYPE`) // need to change text
+                                },
+                                {
+                                    title: i18n._(t`TOKEN`),
+                                    questionText: i18n._(t`This is the token that is currently being staked.`)
+                                },
+                                {
+                                    title: i18n._(t`PROTOCOL`),
+                                    questionText: i18n._(t`This is the protocol that the token is staked to.`)
+                                },
+                                {
+                                    title: i18n._(t`STAKE`),
+                                    questionText: i18n._(t`STAKE`) // need to change text
+                                },
+                                {
+                                    title: `G$ ${i18n._(t`REWARDS`)}`,
+                                    questionText: i18n._(t`REWARDS`) // need to change text
+                                },
+                                {
+                                    title: i18n._(t`MULTIPLIER`),
+                                    questionText: i18n._(t`MULTIPLIER`) // need to change text
+                                },
+                                {
+                                    title: `GDAO ${i18n._(t`REWARDS`)}`,
+                                    questionText: i18n._(t`REWARDS`) // need to change text
+                                }
+                            ].map((item, index) => (
+                                <th key={index}>
+                                    <Title type="category" className="flex items-center">
+                                        {item.title} <QuestionHelper text={item.questionText || ''} />
+                                    </Title>
+                                </th>
+                            ))}
                         </tr>
                     }
                 >
