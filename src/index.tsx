@@ -67,83 +67,25 @@ const Wrapper = styled.div`
 `
 
 function CustomApp() {
-    const [auth, setAuth] = useState(false)
-    const PASSWORD = 'gdbetatest'
-    const PASSWORD_HASH = '$2a$10$V9DPoPvZtRpg9t23wzl5c.jYYyG5VJdJx/pvBJy61WmN/01rkSfSm'
+    // const [auth, setAuth] = useState(false)
+    // const PASSWORD = 'gdbetatest'
+    // const PASSWORD_HASH = '$2a$10$V9DPoPvZtRpg9t23wzl5c.jYYyG5VJdJx/pvBJy61WmN/01rkSfSm'
 
-    useEffect(() => {
-        if (localStorage.getItem('pass') === PASSWORD_HASH) return setAuth(true)
+    // useEffect(() => {
+    //     if (localStorage.getItem('pass') === PASSWORD_HASH) return setAuth(true)
 
-        const passMatch = window.location.search.match(/pass=(.+?)($|&)/)
-        if (passMatch && passMatch[1]) {
-            if (passMatch[1] === PASSWORD) {
-                localStorage.setItem('pass', PASSWORD_HASH)
-                setAuth(true)
-            }
-        }
-    }, [])
+    //     const passMatch = window.location.search.match(/pass=(.+?)($|&)/)
+    //     if (passMatch && passMatch[1]) {
+    //         if (passMatch[1] === PASSWORD) {
+    //             localStorage.setItem('pass', PASSWORD_HASH)
+    //             setAuth(true)
+    //         }
+    //     }
+    // }, [])
 
-    const [value, setValue] = useState('')
+    // const [value, setValue] = useState('')
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
-        setValue(e.target.value)
-    }
-
-    const handleSubmit = () => {
-        if (value) {
-            if (value === PASSWORD) {
-                localStorage.setItem('pass', PASSWORD_HASH)
-                setAuth(true)
-            } else {
-                alert('Incorrect password')
-            }
-        }
-    }
-
-    return (
-        <>
-            {/* {auth ? ( */}
-                <App />
-            {/* ) : (
-                <Modal isOpen={true} onDismiss={() => null}>
-                    <Wrapper>
-                        <Image src={LogoImg} alt="logo" width="100px" />
-                        <Text>
-                            Enter password to continue to <b>GoodDollar</b>
-                        </Text>
-                        <Text>
-                            The password is: <b>gdbetatest</b>
-                        </Text>
-                        <Input
-                            type="password"
-                            autoComplete="off"
-                            autoCorrect="off"
-                            autoCapitalize="off"
-                            placeholder="Password"
-                            onChange={handleChange}
-                            value={value}
-                            onKeyDown={e => {
-                                e.key === 'Enter' && handleSubmit()
-                            }}
-                        />
-                        <ButtonAction onClick={handleSubmit} size="sm" width="50%">
-                            Login
-                        </ButtonAction>
-                        <Text fontSize={14}>
-                            Don&apos;t have password? Subscribe{' '}
-                            <Link
-                                href="https://www.gooddollar.org/#mauticform_wrapper_phase0newslettersubscription"
-                                color="blue"
-                            >
-                                here
-                            </Link>{' '}
-                            for updates on the official release
-                        </Text>
-                    </Wrapper>
-                </Modal>
-            )} */}
-        </>
-    )
+    return <App />;
 }
 
 const GlobalStyle = createGlobalStyle`
