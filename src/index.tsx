@@ -102,9 +102,9 @@ function CustomApp() {
 
     return (
         <>
-            {auth ? (
+            {/* {auth ? ( */}
                 <App />
-            ) : (
+            {/* ) : (
                 <Modal isOpen={true} onDismiss={() => null}>
                     <Wrapper>
                         <Image src={LogoImg} alt="logo" width="100px" />
@@ -141,7 +141,7 @@ function CustomApp() {
                         </Text>
                     </Wrapper>
                 </Modal>
-            )}
+            )} */}
         </>
     )
 }
