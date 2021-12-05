@@ -67,24 +67,6 @@ const Wrapper = styled.div`
 `
 
 function CustomApp() {
-    // const [auth, setAuth] = useState(false)
-    // const PASSWORD = 'gdbetatest'
-    // const PASSWORD_HASH = '$2a$10$V9DPoPvZtRpg9t23wzl5c.jYYyG5VJdJx/pvBJy61WmN/01rkSfSm'
-
-    // useEffect(() => {
-    //     if (localStorage.getItem('pass') === PASSWORD_HASH) return setAuth(true)
-
-    //     const passMatch = window.location.search.match(/pass=(.+?)($|&)/)
-    //     if (passMatch && passMatch[1]) {
-    //         if (passMatch[1] === PASSWORD) {
-    //             localStorage.setItem('pass', PASSWORD_HASH)
-    //             setAuth(true)
-    //         }
-    //     }
-    // }, [])
-
-    // const [value, setValue] = useState('')
-
     return <App />;
 }
 
