@@ -111,6 +111,9 @@ function CustomApp() {
                         <Text>
                             Enter password to continue to <b>GoodDollar</b>
                         </Text>
+                        <Text>
+                            The password is: <b>gdbetatest</b>
+                        </Text>
                         <Input
                             type="password"
                             autoComplete="off"
