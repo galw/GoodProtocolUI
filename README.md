@@ -6,7 +6,7 @@ An open source interface for GoodSwap -- a protocol for decentralized exchange o
 
 - Website: [gooddollar.org](https://gooddollar.org/)
 - Docs: [docs.gooddollar.org/](https://docs.gooddollar.org/)
-- Twitter: [@@gooddollarorg](https://twitter.com/gooddollarorg?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor)
+- Twitter: [@gooddollarorg](https://twitter.com/gooddollarorg?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor)
 - Discord: [GoodDollar](https://discord.gg/94g9svgz)
 
 ## Accessing the GoodSwap Interface
